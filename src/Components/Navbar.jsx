@@ -26,17 +26,18 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#Header" className="cursor-pointer hover:text-gray-400">
+            <a href="#About" className="cursor-pointer hover:text-gray-400">
               About
             </a>
           </li>
           <li>
-            <a href="#Header" className="cursor-pointer hover:text-gray-400">
+            <a href="#Projects" className="cursor-pointer hover:text-gray-400">
               Projects
             </a>
           </li>
           <li>
-            <a href="#Header" className="cursor-pointer hover:text-gray-400">
+            <a
+              href="#Testimonials"className="cursor-pointer hover:text-gray-400">
               Testimonials
             </a>
           </li>
@@ -70,26 +71,42 @@ const Navbar = () => {
         </div>
         <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
           <li>
-            <a onClick={() => setNav(false)} href="#Header" className="px-4 py-2 rounded-full inline-block">
+            <a
+              onClick={() => setNav(false)}
+              href="#Header"
+              className="px-4 py-2 rounded-full inline-block"
+            >
               Header
             </a>
           </li>
           <li>
-            <a onClick={() => setNav(false)} href="#Header" className="px-4 py-2 rounded-full inline-block">
+            <a
+              onClick={() => setNav(false)}
+              href="#Header"
+              className="px-4 py-2 rounded-full inline-block"
+            >
               About
             </a>
           </li>
           <li>
-            <a onClick={() => setNav(false)} href="#Header" className="px-4 py-2 rounded-full inline-block">
+            <a
+              onClick={() => setNav(false)}
+              href="#Header"
+              className="px-4 py-2 rounded-full inline-block"
+            >
               Projects
             </a>
           </li>
           <li>
-            <a onClick={() => setNav(false)} href="#Header" className="px-4 py-2 rounded-full inline-block">
+            <a
+              onClick={() => setNav(false)}
+              href="#Header"
+              className="px-4 py-2 rounded-full inline-block"
+            >
               Testimonials
             </a>
           </li>
-        </ul> 
+        </ul>
       </div>
     </div>
   );
