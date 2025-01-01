@@ -1,6 +1,7 @@
 import React from 'react'
 import { toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from 'motion/react';
 
 
 const contact = () => {
@@ -33,7 +34,11 @@ const contact = () => {
 }
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x:-200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
       className="text-center p-6 py-20 lg:px-32 w-full overflow-hidden"
       id="Contact"
     >
@@ -79,7 +84,7 @@ const contact = () => {
             {result ? result : "Send Message"}
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 }
 
